@@ -9,11 +9,9 @@ const map = new mapboxgl.Map({
   style: 'mapbox://styles/mapbox/satellite-streets-v10' // mapbox has lots of different map styles available
 });
 
-
-
 const markerDomEl = document.createElement("div"); // Create a new, detached DIV
 markerDomEl.style.width = "32px";
 markerDomEl.style.height = "39px";
 markerDomEl.style.backgroundImage = "url(http://i.imgur.com/WbMOfMl.png)";
 
-new mapboxgl.Marker(markerDomEl).setLngLat([40.807316, -73.964761]).addTo(map);
+new mapboxgl.Marker(markerDomEl).setLngLat([-73.964761, 40.807316]).addTo(map);
